@@ -1,0 +1,28 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo center hide-on-small-only"><%= @titlebar %></a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="/logout">Log Out</a></li>
+      <li><a href="/edit">Edit <%=	 session[:first_name] %> </a></li>
+    </ul>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#">Option 1</a></li>
+      <li><a href="#">Option 2</a></li>
+      <li><a href="#">Option 3</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+
+  <%=	 session[:first_name] %>
+  <%=	 session[:last_name] %>
+  <%=	 session[:email] %>
+  <%=	 session[:id] %>
+
+</div>
+
+
+
+<script>
+    $(".dropdown-button").dropdown();
+</script>
